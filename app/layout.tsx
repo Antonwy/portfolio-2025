@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+import type { Metadata, Viewport } from 'next';
 import { Poppins } from 'next/font/google';
 import './globals.css';
 import AnimatedGradientBackground from '@/components/ui/animated-gradient-background';
@@ -15,6 +15,10 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   title: 'Anton Wyrowski',
   description: 'Portfolio of Anton Wyrowski',
+};
+
+export const viewport: Viewport = {
+  themeColor: '#040204',
 };
 
 export default function RootLayout({
