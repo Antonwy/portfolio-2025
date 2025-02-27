@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { Poppins } from 'next/font/google';
 import './globals.css';
 import AnimatedGradientBackground from '@/components/ui/animated-gradient-background';
+import { Analytics } from '@vercel/analytics/react';
 
 // Initialize the Poppins font
 const poppins = Poppins({
@@ -26,6 +27,7 @@ export default function RootLayout({
       <body className="relative antialiased dark:bg-black dark:text-white">
         <AnimatedGradientBackground />
         {children}
+        <Analytics />
       </body>
     </html>
   );
