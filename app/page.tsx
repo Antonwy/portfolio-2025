@@ -1,9 +1,10 @@
-import { HeroGeometric } from '@/components/ui/hero-geometric';
+import HomeHeroSection from '@/components/ui/home-hero-section';
 
 export default function Home() {
   return (
-    <main className="min-h-[100dvh]">
-      <HeroGeometric />
+    <main className="z-10 min-h-[100dvh]">
+      <HomeHeroSection />
+      {/* <ProjectsSection /> */}
     </main>
   );
 }

@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 function AnimatedGradientBackground() {
   return (
-    <div className="absolute z-0 h-[100dvh] w-[100dvw] overflow-hidden inset-0">
+    <div className="fixed -z-10 h-[100dvh] w-[100dvw] overflow-hidden inset-0">
       <motion.div
         className="size-full bg-gradient-to-br from-indigo-500/[0.3] via-transparent to-rose-500/[0.3] blur-3xl"
         animate={{
