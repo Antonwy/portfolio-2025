@@ -1,3 +1,5 @@
+import EducationSection from '@/components/ui/education-section';
+import ExperienceSection from '@/components/ui/experience-section';
 import HomeHeroSection from '@/components/ui/home-hero-section';
 
 export default function Home() {
@@ -5,6 +7,8 @@ export default function Home() {
     <main className="z-10 min-h-[100dvh]">
       <HomeHeroSection />
       {/* <ProjectsSection /> */}
+      <ExperienceSection />
+      <EducationSection />
     </main>
   );
 }
