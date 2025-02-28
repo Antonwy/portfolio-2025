@@ -2,7 +2,7 @@ import TimelineItem from './timeline-item';
 
 function EducationSection() {
   return (
-    <section className="min-h-[100dvh] flex flex-col items-center justify-center">
+    <section className="min-h-[100vh] flex flex-col items-center justify-center">
       <h2 className="font-poppins text-4xl md:text-5xl font-black text-center mb-10">
         🎓 Education
       </h2>
