@@ -12,7 +12,7 @@ function ContactSubmitButton({ pending, disabled }: ContactSubmitButtonProps) {
   return (
     <Button
       type="submit"
-      className="mx-auto py-3"
+      className="mx-auto py-3 mt-2"
       disabled={pending || disabled}
     >
       {pending ? (
