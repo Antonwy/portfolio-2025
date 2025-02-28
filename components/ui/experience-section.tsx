@@ -2,10 +2,10 @@ import { FileUserIcon } from 'lucide-react';
 import TimelineItem from './timeline-item';
 import Button from './button';
 import Link from 'next/link';
-
+import Section from './section';
 function ExperienceSection() {
   return (
-    <section className="min-h-[100vh] flex flex-col items-center justify-center">
+    <Section>
       <h2 className="font-poppins text-4xl md:text-5xl font-black text-center mb-10">
         💼 Experience
       </h2>
@@ -38,7 +38,7 @@ function ExperienceSection() {
           date="October 2019 - December 2021"
         />
       </div>
-    </section>
+    </Section>
   );
 }
 

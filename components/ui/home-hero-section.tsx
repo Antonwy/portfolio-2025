@@ -3,7 +3,8 @@
 import { motion } from 'motion/react';
 import { cn } from '@/lib/utils';
 import { ArrowDownIcon, SendIcon } from 'lucide-react';
-import MotionLink from './motion-link';
+import Section from './section';
+import { SECTION_ANCHORS } from '@/lib/section-anchors';
 
 function HomeHeroSection() {
   const fadeUpVariants = {
@@ -26,25 +27,40 @@ function HomeHeroSection() {
   const heyTitleWords = heyTitle.split(' ');
   const greetingTitleWords = greetingTitle.split(' ');
 
+  const handleScrollToNextSection = () => {
+    window.scrollTo({
+      top: window.innerHeight,
+      behavior: 'smooth',
+    });
+  };
+
+  const handleScrollToContactSection = () => {
+    const contactSection = document.getElementById(SECTION_ANCHORS.contact);
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
-    <section className="relative min-h-[100svh] w-full flex items-center justify-center">
+    <Section className="relative">
       <div className="relative z-10 container mx-auto px-4 md:px-6">
         <div className="max-w-3xl mx-auto text-center">
-          <motion.div
+          <motion.button
             variants={fadeUpVariants}
             custom={0}
             initial="hidden"
             animate="visible"
             className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/[0.03] border border-white/[0.08] mb-8 md:mb-12 hover:bg-white/[0.05] hover:border-white/[0.12] cursor-pointer"
+            onClick={handleScrollToNextSection}
           >
             <span className="relative flex size-2">
               <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-indigo-400 opacity-75" />
               <span className="relative inline-flex size-2 rounded-full bg-indigo-500" />
             </span>
             <span className="text-sm text-white/60 tracking-wide">
-              New Projects
+              New Experience
             </span>
-          </motion.div>
+          </motion.button>
 
           <motion.div
             custom={1}
@@ -94,29 +110,23 @@ function HomeHeroSection() {
           </motion.div>
 
           <div className="flex items-center gap-2 mx-auto justify-center">
-            <MotionLink
-              href="mailto:mail@antonwy.tech?subject=Portfolio%20Inquiry"
+            <motion.button
               variants={fadeUpVariants}
               custom={heyTitleWords.length + greetingTitleWords.length + 1}
               initial="hidden"
               animate="visible"
               className="bg-white/10 px-6 py-3 rounded-lg border border-white/[0.1] transition-colors flex items-center gap-2 hover:border-white/20"
+              onClick={handleScrollToContactSection}
             >
               <SendIcon className="size-4" />
               Get in touch
-            </MotionLink>
+            </motion.button>
             <motion.button
               variants={fadeUpVariants}
               custom={heyTitleWords.length + greetingTitleWords.length + 2}
               initial="hidden"
               animate="visible"
-              onClick={() => {
-                // Scroll to the next section
-                window.scrollTo({
-                  top: window.innerHeight,
-                  behavior: 'smooth',
-                });
-              }}
+              onClick={handleScrollToNextSection}
               className="px-3 py-3 rounded-lg transition-colors flex items-center gap-2 hover:bg-white/[0.05]"
             >
               <ArrowDownIcon className="size-4" />
@@ -125,7 +135,7 @@ function HomeHeroSection() {
           </div>
         </div>
       </div>
-    </section>
+    </Section>
   );
 }
 

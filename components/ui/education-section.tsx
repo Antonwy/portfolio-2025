@@ -1,8 +1,9 @@
 import TimelineItem from './timeline-item';
+import Section from './section';
 
 function EducationSection() {
   return (
-    <section className="min-h-[100vh] flex flex-col items-center justify-center">
+    <Section>
       <h2 className="font-poppins text-4xl md:text-5xl font-black text-center mb-10">
         🎓 Education
       </h2>
@@ -23,7 +24,7 @@ function EducationSection() {
           date="October 2019 - March 2024"
         />
       </div>
-    </section>
+    </Section>
   );
 }
 
