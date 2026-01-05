@@ -7,16 +7,16 @@ function EducationSection() {
       <h2 className="font-poppins text-4xl md:text-5xl font-black text-center mb-10">
         🎓 Education
       </h2>
-      <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-4 p-4">
+      <div className="container mx-auto flex flex-wrap justify-center gap-4 p-4">
         <TimelineItem
           title="Master Thesis"
           description="University of Cambridge"
-          date="October 2024 - Present"
+          date="October 2024 - June 2025"
         />
         <TimelineItem
-          title="M.Sc. in Computer Science"
+          title="M.Sc. in Computer Science (Dropout)"
           description="Technical University of Munich"
-          date="March 2024 - March 2026"
+          date="March 2024 - October 2025"
         />
         <TimelineItem
           title="B.Sc. in Computer Science"
