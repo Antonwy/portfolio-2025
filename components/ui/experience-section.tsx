@@ -16,7 +16,7 @@ function ExperienceSection() {
           Check out my resume
         </Link>
       </Button>
-      <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-4 p-4">
+      <div className="container mx-auto flex flex-wrap justify-center gap-4 p-4">
         <TimelineItem
           title="Perplexity"
           description="Member of Technical Staff"
