@@ -42,7 +42,7 @@ function TimelineItem({ title, description, date, href }: TimelineItemProps) {
       viewport={{
         once: true,
       }}
-      className="rounded-lg shadow-md overflow-hidden border border-white/5 bg-white/5 hover:border-white/10 cursor-pointer p-6"
+      className="rounded-lg shadow-md overflow-hidden border border-white/5 bg-white/5 hover:border-white/10 cursor-pointer p-6 text-center"
     >
       {href ? (
         <Link href={href} target="_blank" className="block">
