@@ -9,14 +9,9 @@ function EducationSection() {
       </h2>
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-4 p-4">
         <TimelineItem
-          title="Master Thesis"
-          description="University of Cambridge"
-          date="October 2024 - Present"
-        />
-        <TimelineItem
-          title="M.Sc. in Computer Science"
+          title="M.Sc. in Computer Science (Dropout)"
           description="Technical University of Munich"
-          date="March 2024 - March 2026"
+          date="March 2024 - May 2025"
         />
         <TimelineItem
           title="B.Sc. in Computer Science"
