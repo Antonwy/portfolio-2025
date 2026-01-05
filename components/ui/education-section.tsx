@@ -11,7 +11,7 @@ function EducationSection() {
         <TimelineItem
           title="Master Thesis"
           description="University of Cambridge"
-          date="October 2024 - Present"
+          date="October 2024 - June 2025"
         />
         <TimelineItem
           title="M.Sc. in Computer Science (Dropout)"
