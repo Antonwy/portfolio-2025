@@ -19,7 +19,7 @@ function ExperienceSection() {
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-4 p-4">
         <TimelineItem
           title="Perplexity"
-          description="Full-Stack Developer"
+          description="Member of Technical Staff"
           date="June 2025 - Present"
         />
         <TimelineItem
