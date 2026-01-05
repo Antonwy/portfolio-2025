@@ -18,6 +18,11 @@ function ExperienceSection() {
       </Button>
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-4 p-4">
         <TimelineItem
+          title="Perplexity.ai"
+          description="Full-Stack Developer"
+          date="June 2025 - Present"
+        />
+        <TimelineItem
           title="wahl.chat"
           description="Founding Member"
           date="September 2022 - Present"
@@ -25,7 +30,7 @@ function ExperienceSection() {
         <TimelineItem
           title="MVST"
           description="Full-Stack Developer"
-          date="September 2022 - Present"
+          date="September 2022 - May 2025"
         />
         <TimelineItem
           title="Chargd."
