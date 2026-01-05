@@ -11,7 +11,7 @@ function EducationSection() {
         <TimelineItem
           title="M.Sc. in Computer Science (Dropout)"
           description="Technical University of Munich"
-          date="March 2024 - May 2025"
+          date="March 2024 - October 2025"
         />
         <TimelineItem
           title="B.Sc. in Computer Science"
