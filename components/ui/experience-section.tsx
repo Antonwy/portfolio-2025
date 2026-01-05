@@ -21,16 +21,19 @@ function ExperienceSection() {
           title="Perplexity"
           description="Member of Technical Staff"
           date="June 2025 - Present"
+          href="https://perplexity.ai"
         />
         <TimelineItem
           title="wahl.chat"
           description="Founding Member"
           date="September 2022 - Present"
+          href="https://wahl.chat"
         />
         <TimelineItem
           title="MVST"
           description="Full-Stack Developer"
           date="September 2022 - May 2025"
+          href="https://mvst.co"
         />
         <TimelineItem
           title="Chargd."

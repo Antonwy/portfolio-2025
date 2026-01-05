@@ -1,15 +1,17 @@
 'use client';
 
 import { motion } from 'motion/react';
+import Link from 'next/link';
 import React from 'react';
 
 interface TimelineItemProps {
   title: React.ReactNode;
   description: React.ReactNode;
   date: string;
+  href?: string;
 }
 
-function TimelineItem({ title, description, date }: TimelineItemProps) {
+function TimelineItem({ title, description, date, href }: TimelineItemProps) {
   const fadeUpVariants = {
     hidden: { opacity: 0, y: 30, filter: 'blur(10px)' },
     visible: {
@@ -24,6 +26,14 @@ function TimelineItem({ title, description, date }: TimelineItemProps) {
     },
   };
 
+  const content = (
+    <>
+      <p className="text-white/60 text-xs">{date}</p>
+      <h3 className="text-xl font-bold my-2">{title}</h3>
+      <p className="text-white/60">{description}</p>
+    </>
+  );
+
   return (
     <motion.div
       initial="hidden"
@@ -34,9 +44,13 @@ function TimelineItem({ title, description, date }: TimelineItemProps) {
       }}
       className="rounded-lg shadow-md overflow-hidden border border-white/5 bg-white/5 hover:border-white/10 cursor-pointer p-6"
     >
-      <p className="text-white/60 text-xs">{date}</p>
-      <h3 className="text-xl font-bold my-2">{title}</h3>
-      <p className="text-white/60">{description}</p>
+      {href ? (
+        <Link href={href} target="_blank" className="block">
+          {content}
+        </Link>
+      ) : (
+        content
+      )}
     </motion.div>
   );
 }
